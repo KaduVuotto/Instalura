@@ -1,0 +1,4 @@
+#Tue Apr 21 14:25:54 BRT 2020
+base.0=/Users/desenvolvedorapp_rcky/Documents/Instalura/android/app/build/intermediates/transforms/dexMerger/release/0
+path.0=classes.dex
+renamed.0=classes.dex
