@@ -36,8 +36,7 @@ const App = () => {
             <Comentarios
               comentarios={item.comentarios}
             />
-          </Fragment>
-        }
+          </Fragment>}
       />
     </ScrollView>
   )
