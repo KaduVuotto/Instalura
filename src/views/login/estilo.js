@@ -12,10 +12,10 @@ const estilo = StyleSheet.create({
         width: largura * 0.8,
         backgroundColor: 'white',
         opacity: 0.6,
-        height: 30,
+        height: 35,
         borderRadius: 22,
         marginTop: 16,
-        paddingLeft: 10
+        paddingLeft: 16
     },
     imagemAlura: {
         width: largura * 0.5,
@@ -39,6 +39,13 @@ const estilo = StyleSheet.create({
         shadowOpacity: 0.41,
         shadowRadius: 9.11,
         elevation: 14,
+    },
+    mensagemErro: {
+        color: 'white',
+        fontSize:16,
+        marginTop:16,
+        textDecorationLine:'underline',
+        textShadowColor:'white'
     },
 })
 

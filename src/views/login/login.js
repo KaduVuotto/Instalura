@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import {
     ScrollView,
     FlatList,
@@ -12,8 +12,22 @@ import {
     ImageBackground
 } from "react-native";
 import estilo from './estilo';
+import efetuarLogin from '../../components/api/login';
 
 const Login = () => {
+    const [usuario, setUsuario] = useState('');
+    const [senha, setSenha] = useState('');
+    const [mensagemErro, setMensagemErro] = useState('');
+
+    const tentarLogar = async () => {
+        try {
+            await efetuarLogin(usuario, senha);
+        } catch (erro) {
+            setMensagemErro(erro.message)
+        }
+    }
+
+
     return (
         <Fragment>
             <ImageBackground style={{
@@ -35,17 +49,23 @@ const Login = () => {
                         style={estilo.inputs}
                         placeholder={'Usuario'}
                         placeholderTextColor={'#999'}
+                        onChangeText={texto => setUsuario(texto)}
                     />
                     <TextInput
                         style={estilo.inputs}
                         placeholder={'Senha'}
                         placeholderTextColor={'#999'}
                         secureTextEntry={true}
+                        onChangeText={texto => setSenha(texto)}
                     />
+                    <Text
+                    
+                    style={estilo.mensagemErro}>{mensagemErro}</Text>
                     <View style={estilo.btnEntrar}>
                         <Button
                             color={'#7232bd'}
                             title={'Entrar'}
+                            onPress={tentarLogar}
                         />
                     </View>
                 </View>
