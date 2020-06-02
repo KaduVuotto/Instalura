@@ -11,16 +11,15 @@ import {
 import estilo from './estilo';
 
 
-const Comentarios = ({ comentarios }) => {
+const Comentarios = ({ comentarios, adicionarComentario }) => {
     const [estadoComentarios, setComentario] = useState(comentarios)
-    const adicionarComentario = () => {
+    
+    const comentar = () => {
         campoInput.clear();
-        const novoComentario = {
-            date: Date.now(),
-            text: conteudoCampoInput,
-            userName: 'bugan',
-        }
-        setComentario([...estadoComentarios, novoComentario]);
+        const novoComentario = adicionarComentario(
+            conteudoCampoInput,
+            'Bugan')
+            setComentario([...estadoComentarios, novoComentario])
     }
 
     let campoInput;
@@ -31,21 +30,49 @@ const Comentarios = ({ comentarios }) => {
                 data={estadoComentarios}
                 keyExtractor={(item, index) => index.toString()}
                 renderItem={({ item }) =>
-                    <View style={[estilo.naMesmaLinha, { borderRadius: 22, elevation: 5, backgroundColor: 'white', height: 40, marginTop: 5 }]}>
+                    <View style={[estilo.naMesmaLinha, {
+                        borderRadius: 22,
+                        shadowColor: "#000",
+                        shadowOffset: {
+                            width: 0,
+                            height: 5,
+                        },
+                        shadowOpacity: 0.36,
+                        shadowRadius: 6.68,
+                        elevation: 11,
+                        backgroundColor: 'white',
+                        height: 40,
+                        marginTop: 5
+                    }]}>
                         <Text style={{ marginLeft: 16 }}>{item.userName} :</Text>
                         <Text style={{ marginLeft: 16 }}>{item.text}</Text>
                     </View>
                 }
             />
 
-            <View style={[estilo.naMesmaLinha, { height: 40, borderRadius: 22, elevation: 5, backgroundColor: 'white', marginTop: 10, paddingLeft:16, marginBottom: 26 }]}>
+            <View style={[estilo.naMesmaLinha, {
+                height: 40,
+                borderRadius: 22,
+                shadowColor: "#000",
+                shadowOffset: {
+                    width: 0,
+                    height: 5,
+                },
+                shadowOpacity: 0.36,
+                shadowRadius: 6.68,
+                elevation: 11,
+                backgroundColor: 'white',
+                marginTop: 10,
+                paddingLeft: 16,
+                marginBottom: 26
+            }]}>
                 <TextInput
                     style={{ flex: 1 }}
                     ref={textInput => campoInput = textInput}
                     placeholder={'Deixe seu comentario...'}
                     onChangeText={texto => { conteudoCampoInput = texto }}
                 />
-                <TouchableOpacity onPress={adicionarComentario}>
+                <TouchableOpacity onPress={comentar}>
                     <Image
                         style={estilo.imgSend}
                         source={require('../../../res/img/send.png')} />

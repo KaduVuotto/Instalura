@@ -40,6 +40,40 @@
 			<key>uniqueIdentifier</key>
 			<string>43BDA22D-6AEC-4005-8D3E-9B786C1F816F</string>
 		</dict>
+		<key>A1F5F2CF-2BAB-4494-A9AE-3E619830E89E</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>A1F5F2CF-2BAB-4494-A9AE-3E619830E89E.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Instalura project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Instalura</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building workspace Instalura with scheme Instalura and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>612823994.07035697</real>
+			<key>timeStoppedRecording</key>
+			<real>612823996.65818703</real>
+			<key>title</key>
+			<string>Building workspace Instalura with scheme Instalura and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>A1F5F2CF-2BAB-4494-A9AE-3E619830E89E</string>
+		</dict>
 	</dict>
 </dict>
 </plist>
