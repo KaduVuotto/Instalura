@@ -23,7 +23,10 @@ const Login = () => {
     const tentarLogar = async () => {
         try {
            const token = await efetuarLogin(usuario, senha);
-           AsyncStorage
+           await AsyncStorage.setItem('intalura_token', token)
+           //Ir para tela de feed
+
+        
         } catch (erro) {
             setMensagemErro(erro.message)
         }

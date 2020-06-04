@@ -40,7 +40,7 @@
 			<key>uniqueIdentifier</key>
 			<string>39460286-A64D-417E-B57F-49161178BF2D</string>
 		</dict>
-		<key>A1F5F2CF-2BAB-4494-A9AE-3E619830E89E</key>
+		<key>F6F71CF5-95D2-4D09-A831-1A98B0F1166D</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -49,13 +49,13 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>A1F5F2CF-2BAB-4494-A9AE-3E619830E89E.xcactivitylog</string>
+			<string>F6F71CF5-95D2-4D09-A831-1A98B0F1166D.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>S</string>
+				<string>W</string>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>Instalura project</string>
@@ -66,13 +66,13 @@
 			<key>signature</key>
 			<string>Building workspace Instalura with scheme Instalura and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>612823994.07035697</real>
+			<real>613006009.67445505</real>
 			<key>timeStoppedRecording</key>
-			<real>612823996.65818703</real>
+			<real>613006092.00652802</real>
 			<key>title</key>
 			<string>Building workspace Instalura with scheme Instalura and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>A1F5F2CF-2BAB-4494-A9AE-3E619830E89E</string>
+			<string>F6F71CF5-95D2-4D09-A831-1A98B0F1166D</string>
 		</dict>
 	</dict>
 </dict>
