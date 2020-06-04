@@ -6,40 +6,6 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>39460286-A64D-417E-B57F-49161178BF2D</key>
-		<dict>
-			<key>className</key>
-			<string>IDECommandLineBuildLog</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>39460286-A64D-417E-B57F-49161178BF2D.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>Instalura project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Instalura</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Building workspace Instalura with scheme Instalura and configuration Debug</string>
-			<key>timeStartedRecording</key>
-			<real>612994528.427248</real>
-			<key>timeStoppedRecording</key>
-			<real>612994529.57272899</real>
-			<key>title</key>
-			<string>Building workspace Instalura with scheme Instalura and configuration Debug</string>
-			<key>uniqueIdentifier</key>
-			<string>39460286-A64D-417E-B57F-49161178BF2D</string>
-		</dict>
 		<key>F6F71CF5-95D2-4D09-A831-1A98B0F1166D</key>
 		<dict>
 			<key>className</key>
