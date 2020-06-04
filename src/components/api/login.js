@@ -17,12 +17,10 @@ const efetuarLogin = async (usuario, senha) => {
         cabecalhoHTTP);
 
     if (resposta.ok) {
-        
+        return resposta.headers.get('x-access-token')
     } else {
         throw new Error('Não foi possível efetuar login')
     }
-
-    console.warn(resposta);
 }
 
 export default efetuarLogin;

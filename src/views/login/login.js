@@ -13,6 +13,7 @@ import {
 } from "react-native";
 import estilo from './estilo';
 import efetuarLogin from '../../components/api/login';
+import AsyncStorage from '@react-native-community/async-storage'
 
 const Login = () => {
     const [usuario, setUsuario] = useState('');
@@ -21,7 +22,8 @@ const Login = () => {
 
     const tentarLogar = async () => {
         try {
-            await efetuarLogin(usuario, senha);
+           const token = await efetuarLogin(usuario, senha);
+           AsyncStorage
         } catch (erro) {
             setMensagemErro(erro.message)
         }
