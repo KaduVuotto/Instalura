@@ -12,14 +12,14 @@ import estilo from './estilo';
 
 
 const Comentarios = ({ comentarios, adicionarComentario }) => {
-    const [estadoComentarios, setComentario] = useState(comentarios)
+    const [estadoComentarios, setComentarios] = useState(comentarios)
     
     const comentar = () => {
         campoInput.clear();
         const novoComentario = adicionarComentario(
             conteudoCampoInput,
             'Bugan')
-            setComentario([...estadoComentarios, novoComentario])
+            setComentarios([...estadoComentarios, novoComentario])
     }
 
     let campoInput;

@@ -4,7 +4,17 @@
             "outputFile": "/Users/desenvolvedorapp_rcky/Documents/Instalura/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/Users/desenvolvedorapp_rcky/.gradle/caches/transforms-2/files-2.1/a0a03ce9695ed9e8b6d654fc0d20bf49/res/values-v16/values-v16.xml",
+                    "source": "/Users/desenvolvedorapp_rcky/.gradle/caches/transforms-2/files-2.1/2fecc25d233fe2947463852631a17c0e/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "/Users/desenvolvedorapp_rcky/.gradle/caches/transforms-2/files-2.1/00ab4a47818d96f39dc50ce13c9468ca/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -20,16 +30,6 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
-                    }
-                },
-                {
-                    "source": "/Users/desenvolvedorapp_rcky/.gradle/caches/transforms-2/files-2.1/617a31f0026f9bcff78314475f1bf498/res/values-v16/values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
                     }
                 }
             ]

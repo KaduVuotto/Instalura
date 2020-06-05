@@ -12,7 +12,7 @@ const estilo = StyleSheet.create({
         width: largura * 0.8,
         backgroundColor: 'white',
         opacity: 0.6,
-        height: 35,
+        height: 40,
         borderRadius: 22,
         marginTop: 16,
         paddingLeft: 16

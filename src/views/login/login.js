@@ -15,23 +15,22 @@ import estilo from './estilo';
 import efetuarLogin from '../../components/api/login';
 import AsyncStorage from '@react-native-community/async-storage'
 
-const Login = () => {
+const Login = ({ navigation }) => {
     const [usuario, setUsuario] = useState('');
     const [senha, setSenha] = useState('');
     const [mensagemErro, setMensagemErro] = useState('');
 
     const tentarLogar = async () => {
         try {
-           const token = await efetuarLogin(usuario, senha);
-           await AsyncStorage.setItem('intalura_token', token)
-           //Ir para tela de feed
+            const token = await efetuarLogin(usuario, senha);
+            await AsyncStorage.setItem('intalura_token', token)
+            //Ir para tela de feed
+            navigation.replace('Feed', { nome: usuario })
 
-        
         } catch (erro) {
             setMensagemErro(erro.message)
         }
     }
-
 
     return (
         <Fragment>
@@ -64,8 +63,8 @@ const Login = () => {
                         onChangeText={texto => setSenha(texto)}
                     />
                     <Text
-                    
-                    style={estilo.mensagemErro}>{mensagemErro}</Text>
+
+                        style={estilo.mensagemErro}>{mensagemErro}</Text>
                     <View style={estilo.btnEntrar}>
                         <Button
                             color={'#7232bd'}
@@ -78,5 +77,12 @@ const Login = () => {
         </Fragment>
     )
 };
+
+Login.navigationOptions = () => {
+    const opcoes = {
+        header: null
+    }
+    return opcoes;
+}
 
 export default Login;

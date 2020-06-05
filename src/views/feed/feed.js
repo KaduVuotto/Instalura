@@ -23,9 +23,6 @@ const Feed = () => {
   }, [])
 
   let altura = 0;
-  if (Platform.OS === 'ios') {
-    altura = 35;
-  }
   return (
     <ScrollView style={{
       marginTop: altura
@@ -58,5 +55,12 @@ const Feed = () => {
     </ScrollView>
   )
 };
+
+Feed.navigationOptions = ({navigation}) => {
+  const opcoes = {
+      title: navigation.getParam('nome'),
+  }
+  return opcoes;
+}
 
 export default Feed;

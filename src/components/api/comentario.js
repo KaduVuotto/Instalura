@@ -2,7 +2,7 @@ const adicionarComentario = (comentario, usuario) => {
     
     const novoComentario = {
         date: Date.now(),
-        text: conteudoCampoInput,
+        text: comentario,
         userName: usuario,
     }
     return novoComentario;
